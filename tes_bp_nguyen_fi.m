@@ -155,4 +155,9 @@ while stop == 0 && epoch ~= max_epoch
     
 end
 
+xlswrite(file,weight_hidden_in,5);
+xlswrite(file,weight_hidden_out,6);
+xlswrite(file,bias_hidden_in,7);
+xlswrite(file,bias_hidden_out,8);
+
 plot(error_tot)
